@@ -4,7 +4,8 @@ applications:
     charm: ch:mysql-router
     channel: 8.0.19/stable
   barbican:
-    charm: cs:barbican
+    charm: ch:barbican
+    channel: yoga/stable
     num_units: 1
     options:
       source: *openstack-origin
