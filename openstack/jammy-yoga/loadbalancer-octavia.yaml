@@ -8,7 +8,7 @@ applications:
     channel: yoga/stable
     num_units: 1
     options:
-      source: *openstack-origin
+      openstack-origin: *openstack-origin
     to:
     - lxd:1
   barbican-vault:
@@ -16,10 +16,7 @@ applications:
     channel: yoga/stable
   octavia-ovn-chassis:
     charm: ch:ovn-chassis
-    channel: yoga/stable
-    options:
-      ovn-bridge-mappings: physnet1:br-ex
-      bridge-interface-mappings: *data-port
+    channel: 22.03/stable
   octavia-mysql-router:
     charm: ch:mysql-router
     channel: 8.0.19/stable
@@ -28,7 +25,7 @@ applications:
     channel: yoga/stable
     num_units: 1
     options:
-      source: *openstack-origin
+      openstack-origin: *openstack-origin
     to:
     - lxd:2
   octavia-dashboard:
