@@ -2,7 +2,7 @@
 applications:
   barbican-mysql-router:
     charm: ch:mysql-router
-    channel: 8.0.19/stable
+    channel: 8.0/stable
   barbican:
     charm: ch:barbican
     channel: yoga/stable
@@ -19,7 +19,7 @@ applications:
     channel: 22.03/stable
   octavia-mysql-router:
     charm: ch:mysql-router
-    channel: 8.0.19/stable
+    channel: 8.0/stable
   octavia:
     charm: ch:octavia
     channel: yoga/stable
