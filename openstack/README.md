@@ -34,3 +34,11 @@ juju config nova-cloud-controller console-access-protocol=novnc
 juju config nova-compute enable-vtpm=true
 juju config nova-compute extra-repositories=ppa:openstack-charmers/swtpm
 ```
+
+## Scale
+```
+juju add-unit nova-compute -n3
+juju add-unit ceph-osd --to 3
+juju add-unit ceph-osd --to 4
+juju add-unit ceph-osd --to 5
+```
