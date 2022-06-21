@@ -24,5 +24,6 @@ openstack quota set --secgroups 40 $id
 ## Deploy
 ```
 cd 1.21
+juju add-model kubernetes
 juju deploy ./bundle.yaml
 ```
