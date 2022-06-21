@@ -28,3 +28,8 @@ juju add-model kubernetes
 juju set-model-constraints "root-disk-source=volume"
 juju deploy ./bundle.yaml --trust
 ```
+
+### Openstack settings
+* Make Security Group "octavia-lb-kubernetes-ingress"
+* Add Rule: TCP, Ingress, Port Range, From 30000, To 32767, CIDR 10.87.53.0/24
+* Add Security Group to all kubernetes-worker VMs
