@@ -25,5 +25,6 @@ openstack quota set --secgroups 40 $id
 ```
 cd 1.21
 juju add-model kubernetes
-juju deploy ./bundle.yaml
+juju set-model-constraints "root-disk-source=volume"
+juju deploy ./bundle.yaml --trust
 ```
